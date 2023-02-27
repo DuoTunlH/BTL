@@ -87,10 +87,8 @@ public class LoginAndRegisterUI extends JFrame {
                                         .addComponent(registerBtn))
                                 .addContainerGap(182, Short.MAX_VALUE))
         );
-
         pack();
     }
-
     public User login() {
         User user = userData.getUser(new User(userNameTextField.getText(), String.valueOf(passwordTextField.getPassword())));
         if (user != null) {
